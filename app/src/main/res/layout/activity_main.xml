@@ -6,13 +6,187 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--    <Button-->
+    <!--        android:id="@+id/p25"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="4dp"-->
+    <!--        android:text="25%"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/p20"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/p20" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/p15"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginStart="4dp"-->
+    <!--        android:layout_marginTop="108dp"-->
+    <!--        android:text="15%"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/p10"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/seekBar" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/p20"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="108dp"-->
+    <!--        android:text="20%"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/p15"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/seekBar" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/p10"-->
+    <!--        android:layout_width="80dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginStart="32dp"-->
+    <!--        android:layout_marginTop="108dp"-->
+    <!--        android:background="#F44336"-->
+    <!--        android:backgroundTint="#811C1C"-->
+    <!--        android:text="10%"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/totalAmount2" />-->
+
+    <!-- text on left side -->
+
+    <Button
+        android:id="@+id/twenty_button"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="74dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="136dp"
+        android:backgroundTint="#2196F3"
+        android:text="20%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fifteen_button" />
+
+    <Button
+        android:id="@+id/ten_button"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="62dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="132dp"
+        android:backgroundTint="#2196F3"
+        android:text="10%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fifteen_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fifteen_button"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="54dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="132dp"
+        android:backgroundTint="#2196F3"
+        android:text="15%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/twenty_button" />
+
+    <Button
+        android:id="@+id/thirty_button"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="132dp"
+        android:backgroundTint="#2196F3"
+        android:text="30%"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/twenty_button" />
+
     <TextView
+        android:id="@+id/tips_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="88dp"
+        android:text="Tips"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/base_label" />
+
+    <TextView
+        android:id="@+id/base_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="92dp"
+        android:text="Base"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/seekBarPercentage_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="84dp"
+        android:text="24%"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_label" />
+
+    <TextView
+        android:id="@+id/total_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="88dp"
+        android:text="Total"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tips_label" />
+
+    <!-- stuff on the right side -->
+
+    <EditText
+        android:id="@+id/billAmount"
+        android:layout_width="195dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="80dp"
+        android:ems="8"
+        android:hint="Bill Amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/base_label"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tipsAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="72dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/tips_label"
+        app:layout_constraintTop_toBottomOf="@+id/billAmount" />
+
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="88dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/total_label"
+        app:layout_constraintTop_toBottomOf="@+id/tipsAmount" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="220dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="84dp"
+        android:max="30"
+        app:layout_constraintStart_toEndOf="@+id/seekBarPercentage_label"
+        app:layout_constraintTop_toBottomOf="@+id/totalAmount" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
