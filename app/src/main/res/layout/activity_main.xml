@@ -122,7 +122,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/seekBarPercentage_label"
+        android:id="@+id/tipPercentage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="44dp"
@@ -158,35 +158,35 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tipsAmount"
+        android:id="@+id/tipAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
         android:layout_marginTop="72dp"
-        android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toEndOf="@+id/tips_label"
-        app:layout_constraintTop_toBottomOf="@+id/billAmount" />
+        app:layout_constraintStart_toStartOf="@+id/billAmount"
+        app:layout_constraintTop_toBottomOf="@+id/billAmount"
+        tools:text="19.96" />
 
     <TextView
         android:id="@+id/totalAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
         android:layout_marginTop="88dp"
-        android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toEndOf="@+id/total_label"
-        app:layout_constraintTop_toBottomOf="@+id/tipsAmount" />
+        app:layout_constraintStart_toStartOf="@+id/tipAmount"
+        app:layout_constraintTop_toBottomOf="@+id/tipAmount"
+        tools:text="105.12" />
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/seekBarSlide"
         android:layout_width="220dp"
         android:layout_height="33dp"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="84dp"
         android:max="30"
-        app:layout_constraintStart_toEndOf="@+id/seekBarPercentage_label"
+        app:layout_constraintStart_toEndOf="@+id/tipPercentage"
+        app:layout_constraintStart_toStartOf="@+id/totalAmount"
         app:layout_constraintTop_toBottomOf="@+id/totalAmount" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
