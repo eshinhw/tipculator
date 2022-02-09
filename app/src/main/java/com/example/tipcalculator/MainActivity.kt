@@ -65,6 +65,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun computeTipAndTotal() {
+
+        if (billAmount.text.isEmpty()) {
+            tipAmount.text = ""
+            totalAmount.text = ""
+            return
+        }
         // 1. Get the value of the base and tip percent
         val base = billAmount.text.toString().toDouble()
         val tipPercent = seekBarSlide.progress
