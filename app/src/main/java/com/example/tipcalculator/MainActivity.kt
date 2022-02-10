@@ -19,6 +19,7 @@ private const val INITIAL_TIP_PERCENT = 15
 class MainActivity : AppCompatActivity() {
 
     private lateinit var billAmount: EditText //late initialization
+
     private lateinit var seekBarSlide: SeekBar
     private lateinit var tipAmount: TextView
     private lateinit var totalAmount: TextView
@@ -29,10 +30,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var twentyButton: Button
     private lateinit var thirtyButton: Button
 
-
     private lateinit var tipDescription: TextView
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,18 +48,14 @@ class MainActivity : AppCompatActivity() {
 
         tipDescription = findViewById(R.id.tipDescription)
 
-
         tenButton.setOnClickListener{
             seekBarSlide.progress = 10
             computeTipAndTotal()
-            //tenButton.setBackgroundColor(R.color.light_brown)
-
         }
 
         fifteenButton.setOnClickListener{
             seekBarSlide.progress = 15
             computeTipAndTotal()
-
         }
 
         twentyButton.setOnClickListener{
@@ -73,11 +67,7 @@ class MainActivity : AppCompatActivity() {
         thirtyButton.setOnClickListener{
             seekBarSlide.progress = 30
             computeTipAndTotal()
-
         }
-
-
-
 
         seekBarSlide.progress = INITIAL_TIP_PERCENT
         tipPercentage.text = "$INITIAL_TIP_PERCENT%"
@@ -127,19 +117,14 @@ class MainActivity : AppCompatActivity() {
         val tipPercent = seekBarSlide.progress
         println(base)
         println(tipPercent)
-        // println(type(tipPercent))
-        // 2. Compute the tip and total
 
+        // 2. Compute the tip and total
         val tipAmt = base * tipPercent / 100
         val totalAmt = base + tipAmt
 
-        println(tipAmt)
-        println(totalAmt)
-
         // 3. Update the UI
-
-        tipAmount.text = "%.2f".format(tipAmt)
-        totalAmount.text = "%.2f".format(totalAmt)
+        tipAmount.text = "$ " + "%.2f".format(tipAmt)
+        totalAmount.text = "$ " + "%.2f".format(totalAmt)
 
     }
 
@@ -161,8 +146,6 @@ class MainActivity : AppCompatActivity() {
             ContextCompat.getColor(this, R.color.best)
         ) as Int
 
-        //tipDescription.setTextColor(getResources().getColor(R.color))
-        // setTextColor crashes the app
         tipDescription.setTextColor(color)
     }
 }
