@@ -1,211 +1,319 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tvTipAmountLabel"
+        <TextView
+            android:id="@+id/tvBillAmountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bill Amount"
+            android:layout_weight="0.5" />
+
+        <EditText
+            android:id="@+id/etBillAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:hint="Enter Bill Amount"
+            android:inputType="numberDecimal"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTipAmountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tip"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:id="@+id/tvTipAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 32.45"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTotalAmountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/tvTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="$ 19.96"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSplitNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Split"/>
+
+<!--        Number of people for splits-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSplitTipLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Split Tip"/>
+
+        <TextView
+            android:id="@+id/tvSplitTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$4.56"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSplitTotalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Split Total"/>
+
+        <TextView
+            android:id="@+id/tvSplitTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$23.56"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Tips"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="@+id/tvBillAmountLabel"
-        app:layout_constraintTop_toBottomOf="@+id/tvBillAmountLabel" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tvBillAmountLabel"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/tvTipPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15%"/>
+
+        <SeekBar
+            android:id="@+id/sbTipPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="92dp"
-        android:text="Bill Amount"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal">
 
-    <!-- stuff on the right side -->
+        <Button
+            android:id="@+id/btnTenPct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10%"
+            />
+        <Button
+            android:id="@+id/btnFifteenPct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15%"
+            />
+        <Button
+            android:id="@+id/btnTwentyPct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20%"
+            />
+        <Button
+            android:id="@+id/btnThirtyPct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30%"
+            />
 
-    <TextView
-        android:id="@+id/tvTipAmount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="@+id/tvTipAmountLabel"
-        app:layout_constraintStart_toStartOf="@+id/etBillAmount"
-        tools:text="19.96" />
-
-    <TextView
-        android:id="@+id/totalAmount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="@+id/tvTotalAmountLabel"
-        app:layout_constraintStart_toStartOf="@+id/tvTipAmount"
-        tools:text="105.12" />
-
-    <EditText
-        android:id="@+id/etBillAmount"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:ems="8"
-        android:hint="Type Bill Amount"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="@+id/tvBillAmountLabel"
-        app:layout_constraintStart_toEndOf="@+id/tvBillAmountLabel" />
-
-    <SeekBar
-        android:id="@+id/sbTipPercentage"
-        android:layout_width="180dp"
-        android:layout_height="36dp"
-        android:max="30"
-        app:layout_constraintBottom_toBottomOf="@+id/tvCurrTipPercentage"
-        app:layout_constraintStart_toStartOf="@+id/totalAmount" />
-
-    <TextView
-        android:id="@+id/tvTotalAmountLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Total Amount"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="@+id/tvTipAmountLabel"
-        app:layout_constraintTop_toBottomOf="@+id/tvTipAmountLabel" />
-
-    <TextView
-        android:id="@+id/tvCurrTipPercentage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="24%"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="@+id/tvTotalAmountLabel"
-        app:layout_constraintTop_toBottomOf="@+id/tvTotalAmountLabel" />
-
-    <TextView
-        android:id="@+id/tvTipDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/sbTipPercentage"
-        app:layout_constraintStart_toStartOf="@+id/sbTipPercentage"
-        app:layout_constraintTop_toBottomOf="@+id/sbTipPercentage"
-        tools:text="Acceptable" />
-
-    <TextView
-        android:id="@+id/tvSplit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="Split"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="@+id/tvCurrTipPercentage"
-        app:layout_constraintTop_toBottomOf="@+id/tvCurrTipPercentage" />
-
-    <Button
-        android:id="@+id/btnThirtyPct"
-        style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="@color/light_brown"
-        android:text="30%"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnTwentyPct"
-        app:layout_constraintTop_toTopOf="@+id/btnTwentyPct" />
-
-    <Button
-        android:id="@+id/btnTenPct"
-        style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="150dp"
-        android:backgroundTint="@color/light_brown"
-        android:text="10%"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnFifteenPct"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnFifteenPct"
-        style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:backgroundTint="@color/light_brown"
-        android:text="15%"
-        app:layout_constraintEnd_toStartOf="@+id/btnTwentyPct"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnTenPct"
-        app:layout_constraintTop_toTopOf="@+id/btnTenPct" />
-
-    <Button
-        android:id="@+id/btnTwentyPct"
-        style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:backgroundTint="@color/light_brown"
-        android:text="20%"
-        app:layout_constraintEnd_toStartOf="@+id/btnThirtyPct"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnFifteenPct"
-        app:layout_constraintTop_toTopOf="@+id/btnFifteenPct" />
-
-    <EditText
-        android:id="@+id/etSplitCount"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Number of People"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/sbTipPercentage"
-        tools:layout_editor_absoluteY="319dp" />
-
-    <TextView
-        android:id="@+id/tvSplitTipLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Split Tips"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="@+id/tvSplit"
-        tools:layout_editor_absoluteY="391dp" />
-
-    <TextView
-        android:id="@+id/tvSplitTotalLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Split Total"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="@+id/tvSplitTipLabel"
-        tools:layout_editor_absoluteY="444dp" />
-
-    <TextView
-        android:id="@+id/tvSplitTipActual"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="50"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="@+id/etSplitCount"
-        tools:layout_editor_absoluteY="391dp" />
-
-    <TextView
-        android:id="@+id/tvSplitTotalActual"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="100"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="@+id/tvSplitTipActual"
-        tools:layout_editor_absoluteY="444dp" />
+    </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--    -->
+
+
+
+
+
+<!--    <SeekBar-->
+<!--        android:id="@+id/sbTipPercentage"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="36dp"-->
+<!--        android:max="30"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/tvCurrTipPercentage"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/totalAmount" />-->
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvCurrTipPercentage"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:text="24%"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/tvTotalAmountLabel"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvTotalAmountLabel" />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvSplit"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="36dp"-->
+<!--        android:text="Split"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/tvCurrTipPercentage"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvCurrTipPercentage" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnThirtyPct"-->
+<!--        style="@style/Widget.MaterialComponents.Button"-->
+<!--        android:layout_width="70dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:backgroundTint="@color/light_brown"-->
+<!--        android:text="30%"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/btnTwentyPct"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/btnTwentyPct" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnTenPct"-->
+<!--        style="@style/Widget.MaterialComponents.Button"-->
+<!--        android:layout_width="70dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginBottom="150dp"-->
+<!--        android:backgroundTint="@color/light_brown"-->
+<!--        android:text="10%"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/btnFifteenPct"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnFifteenPct"-->
+<!--        style="@style/Widget.MaterialComponents.Button"-->
+<!--        android:layout_width="70dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:backgroundTint="@color/light_brown"-->
+<!--        android:text="15%"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/btnTwentyPct"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/btnTenPct"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/btnTenPct" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnTwentyPct"-->
+<!--        style="@style/Widget.MaterialComponents.Button"-->
+<!--        android:layout_width="70dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:backgroundTint="@color/light_brown"-->
+<!--        android:text="20%"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/btnThirtyPct"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/btnFifteenPct"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/btnFifteenPct" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etSplitCount"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Number of People"-->
+<!--        android:inputType="textPersonName"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/sbTipPercentage"-->
+<!--        tools:layout_editor_absoluteY="319dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvSplitTipLabel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Split Tips"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/tvSplit"-->
+<!--        tools:layout_editor_absoluteY="391dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvSplitTotalLabel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Split Total"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/tvSplitTipLabel"-->
+<!--        tools:layout_editor_absoluteY="444dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvSplitTipActual"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="50"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/etSplitCount"-->
+<!--        tools:layout_editor_absoluteY="391dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvSplitTotalActual"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="100"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/tvSplitTipActual"-->
+<!--        tools:layout_editor_absoluteY="444dp" />-->
+
+
+</LinearLayout>
