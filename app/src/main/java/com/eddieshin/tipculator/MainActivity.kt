@@ -34,18 +34,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        billAmount = findViewById(R.id.billAmount)
-        seekBarSlide = findViewById(R.id.seekBarSlide)
-        tipAmount = findViewById(R.id.tipAmount)
+        billAmount = findViewById(R.id.etBillAmount)
+        seekBarSlide = findViewById(R.id.sbTipPercentage)
+        tipAmount = findViewById(R.id.tvTipAmount)
         totalAmount = findViewById(R.id.totalAmount)
-        tipPercentage = findViewById(R.id.tipPercentage)
+        tipPercentage = findViewById(R.id.tvCurrTipPercentage)
 
-        tenButton = findViewById(R.id.ten_button)
-        fifteenButton = findViewById(R.id.fifteen_button)
-        twentyButton = findViewById(R.id.twenty_button)
-        thirtyButton = findViewById(R.id.thirty_button)
+        tenButton = findViewById(R.id.btnTenPct)
+        fifteenButton = findViewById(R.id.btnFifteenPct)
+        twentyButton = findViewById(R.id.btnTwentyPct)
+        thirtyButton = findViewById(R.id.btnThirtyPct)
 
-        tipDescription = findViewById(R.id.tipDescription)
+        tipDescription = findViewById(R.id.tvTipDescription)
 
         tenButton.setOnClickListener{
             seekBarSlide.progress = 10

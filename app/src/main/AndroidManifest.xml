@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TipCalculator">
+        android:theme="@style/Theme.Tipculator">
         <activity
             android:name="com.eddieshin.tipculator.MainActivity"
             android:exported="true">
