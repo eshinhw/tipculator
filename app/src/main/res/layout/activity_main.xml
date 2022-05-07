@@ -53,7 +53,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="30dp">
 
         <TextView
             android:id="@+id/tvTotalAmountLabel"
@@ -109,7 +110,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="30dp">
 
         <TextView
             android:id="@+id/tvSplitTotalLabel"
@@ -140,7 +142,8 @@
         <SeekBar
             android:id="@+id/sbTipPercentage"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:max="30"/>
     </LinearLayout>
 
     <LinearLayout
@@ -174,146 +177,5 @@
             />
 
     </LinearLayout>
-
-
-
-
-<!--    -->
-
-
-
-
-
-<!--    <SeekBar-->
-<!--        android:id="@+id/sbTipPercentage"-->
-<!--        android:layout_width="180dp"-->
-<!--        android:layout_height="36dp"-->
-<!--        android:max="30"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/tvCurrTipPercentage"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/totalAmount" />-->
-
-
-
-<!--    <TextView-->
-<!--        android:id="@+id/tvCurrTipPercentage"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="24dp"-->
-<!--        android:text="24%"-->
-<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/tvTotalAmountLabel"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/tvTotalAmountLabel" />-->
-
-
-<!--    <TextView-->
-<!--        android:id="@+id/tvSplit"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="36dp"-->
-<!--        android:text="Split"-->
-<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/tvCurrTipPercentage"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/tvCurrTipPercentage" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnThirtyPct"-->
-<!--        style="@style/Widget.MaterialComponents.Button"-->
-<!--        android:layout_width="70dp"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:layout_marginEnd="32dp"-->
-<!--        android:backgroundTint="@color/light_brown"-->
-<!--        android:text="30%"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.5"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btnTwentyPct"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/btnTwentyPct" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnTenPct"-->
-<!--        style="@style/Widget.MaterialComponents.Button"-->
-<!--        android:layout_width="70dp"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_marginStart="32dp"-->
-<!--        android:layout_marginBottom="150dp"-->
-<!--        android:backgroundTint="@color/light_brown"-->
-<!--        android:text="10%"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toStartOf="@+id/btnFifteenPct"-->
-<!--        app:layout_constraintHorizontal_bias="0.5"-->
-<!--        app:layout_constraintStart_toStartOf="parent" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnFifteenPct"-->
-<!--        style="@style/Widget.MaterialComponents.Button"-->
-<!--        android:layout_width="70dp"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:backgroundTint="@color/light_brown"-->
-<!--        android:text="15%"-->
-<!--        app:layout_constraintEnd_toStartOf="@+id/btnTwentyPct"-->
-<!--        app:layout_constraintHorizontal_bias="0.5"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btnTenPct"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/btnTenPct" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btnTwentyPct"-->
-<!--        style="@style/Widget.MaterialComponents.Button"-->
-<!--        android:layout_width="70dp"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:backgroundTint="@color/light_brown"-->
-<!--        android:text="20%"-->
-<!--        app:layout_constraintEnd_toStartOf="@+id/btnThirtyPct"-->
-<!--        app:layout_constraintHorizontal_bias="0.5"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/btnFifteenPct"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/btnFifteenPct" />-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/etSplitCount"-->
-<!--        android:layout_width="180dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:ems="10"-->
-<!--        android:hint="Number of People"-->
-<!--        android:inputType="textPersonName"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/sbTipPercentage"-->
-<!--        tools:layout_editor_absoluteY="319dp" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/tvSplitTipLabel"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Split Tips"-->
-<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/tvSplit"-->
-<!--        tools:layout_editor_absoluteY="391dp" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/tvSplitTotalLabel"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Split Total"-->
-<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/tvSplitTipLabel"-->
-<!--        tools:layout_editor_absoluteY="444dp" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/tvSplitTipActual"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="50"-->
-<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/etSplitCount"-->
-<!--        tools:layout_editor_absoluteY="391dp" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/tvSplitTotalActual"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="100"-->
-<!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/tvSplitTipActual"-->
-<!--        tools:layout_editor_absoluteY="444dp" />-->
-
 
 </LinearLayout>
