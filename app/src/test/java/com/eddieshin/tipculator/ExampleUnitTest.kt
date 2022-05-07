@@ -1,4 +1,4 @@
-package com.eddieshin.tipcalculator
+package com.eddieshin.tipculator
 
 import org.junit.Test
 

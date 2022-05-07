@@ -1,4 +1,4 @@
-package com.eddieshin.tipcalculator
+package com.eddieshin.tipculator
 
 import android.animation.ArgbEvaluator
 import androidx.appcompat.app.AppCompatActivity
