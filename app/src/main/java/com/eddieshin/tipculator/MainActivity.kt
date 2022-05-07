@@ -38,14 +38,14 @@ class MainActivity : AppCompatActivity() {
 
         sbTipPercentage.progress = INITIAL_TIP_PERCENT
         tvTipPercentage.text = "$INITIAL_TIP_PERCENT%"
-        updateTipDescription(INITIAL_TIP_PERCENT)
+//        updateTipDescription(INITIAL_TIP_PERCENT)
 
         sbTipPercentage.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 Log.i(TAG, "onProgressChanged $progress")
                 tvTipPercentage.text = "$progress%"
                 computeTipAndTotal()
-                updateTipDescription(progress)
+//                updateTipDescription(progress)
             }
 
             override fun onStartTrackingTouch(p0: SeekBar?) {
