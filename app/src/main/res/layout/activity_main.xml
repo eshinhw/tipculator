@@ -29,10 +29,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="8"
-            android:hint="Enter Bill Amount"
+            android:hint="Enter Bill"
             android:inputType="numberDecimal"
             android:textAlignment="center"
-            android:textSize="30sp"/>
+            android:textSize="30sp" />
 
     </LinearLayout>
     <LinearLayout
@@ -123,7 +123,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="$4.56"
+            android:text="$ 4.56"
             android:textAlignment="center"
             android:textSize="30sp" />
 
@@ -149,7 +149,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="$23.56"
+            android:text="$ 23.56"
             android:textAlignment="center"
             android:textSize="30sp" />
 
@@ -207,12 +207,40 @@
             android:layout_weight="1"
             />
         <Button
-            android:id="@+id/btnThirtyPct"
+            android:id="@+id/btnCustomTip"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="30%"
+            android:text="Custom"
             android:layout_weight="1"
             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/tvCustomTipLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Custom (%)"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Tip"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:ems="8"/>
+
 
     </LinearLayout>
 

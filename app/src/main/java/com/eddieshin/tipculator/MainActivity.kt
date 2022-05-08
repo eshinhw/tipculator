@@ -1,16 +1,11 @@
 package com.eddieshin.tipculator
 
-import android.animation.ArgbEvaluator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
-import android.widget.Button
-import android.widget.EditText
 import android.widget.SeekBar
-import android.widget.TextView
-import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_main.*
 
 private const val TAG = "MainActivity"
@@ -72,7 +67,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        btnThirtyPct.setOnClickListener{
+        btnCustomTip.setOnClickListener{
             sbTipPercentage.progress = 30
             computeTipAndTotal()
         }
