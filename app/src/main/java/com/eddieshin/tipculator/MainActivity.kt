@@ -32,6 +32,20 @@ class MainActivity : AppCompatActivity() {
 
         })
 
+        etSplitNum.addTextChangedListener(object: TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+                Log.i(TAG, "afterTextChanged $s")
+                computeTipAndTotal()
+            }
+
+        })
+
         sbTipPercentage.progress = INITIAL_TIP_PERCENT
         tvTipPercentage.text = "$INITIAL_TIP_PERCENT%"
 //        updateTipDescription(INITIAL_TIP_PERCENT)
@@ -85,11 +99,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun computeTipAndTotal() {
-
-
-        if (etBillAmount.text.isEmpty()) {
+        if (etBillAmount.text.isEmpty() || etSplitNum.text.isEmpty()) {
             tvTipAmount.text = ""
             tvTotalAmount.text = ""
+            tvSplitTip.text = ""
+            tvSplitTotal.text = ""
             return
         }
         // 1. Get the value of the base and tip percent
@@ -98,13 +112,27 @@ class MainActivity : AppCompatActivity() {
         println(base)
         println(tipPercent)
 
-        // 2. Compute the tip and total
         val tipAmt = base * tipPercent / 100
         val totalAmt = base + tipAmt
 
+        val splitNum = etSplitNum.text.toString().toInt()
+
+        if (splitNum > 1) {
+            val splitTipAmt = (base * tipPercent / 100) / splitNum
+            val splitTotalAmt = (base + splitTipAmt) / splitNum
+
+            tvTipAmount.text = "$ " + "%.2f".format(tipAmt)
+            tvTotalAmount.text = "$ " + "%.2f".format(totalAmt)
+
+            tvSplitTip.text = "$ " + "%.2f".format(splitTipAmt)
+            tvSplitTotal.text = "$ " + "%.2f".format(splitTotalAmt)
+        } else {
+            tvTipAmount.text = "$ " + "%.2f".format(tipAmt)
+            tvTotalAmount.text = "$ " + "%.2f".format(totalAmt)
+        }
+
         // 3. Update the UI
-        tvTipAmount.text = "$ " + "%.2f".format(tipAmt)
-        tvTotalAmount.text = "$ " + "%.2f".format(totalAmt)
+
 
     }
 

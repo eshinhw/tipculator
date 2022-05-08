@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,7 +56,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="$ 32.45"
             android:textAlignment="center"
             android:textSize="30sp" />
 
@@ -80,8 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textAlignment="center"
-            android:textSize="30sp"
-            tools:text="$ 19.96" />
+            android:textSize="30sp" />
 
     </LinearLayout>
 
@@ -96,7 +96,7 @@
             android:id="@+id/tvSplitNum"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Split"
+            android:text="Split Persons"
             android:textAlignment="center"
             android:textSize="30sp"
             android:layout_weight="1"/>
@@ -134,7 +134,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="$ 4.56"
             android:textAlignment="center"
             android:textSize="30sp" />
 
@@ -160,7 +159,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="$ 23.56"
             android:textAlignment="center"
             android:textSize="30sp" />
 
@@ -222,7 +220,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Custom"
-            android:layout_weight="1"
+            android:layout_weight="1.6"
             />
 
     </LinearLayout>
