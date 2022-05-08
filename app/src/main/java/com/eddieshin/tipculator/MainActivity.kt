@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
+import android.view.View
 import android.widget.SeekBar
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -68,8 +69,18 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnCustomTip.setOnClickListener{
-            sbTipPercentage.progress = 30
-            computeTipAndTotal()
+            if (tvCustomTipLabel.visibility == View.VISIBLE) {
+                tvCustomTipLabel.visibility = View.INVISIBLE
+            } else {
+                tvCustomTipLabel.visibility = View.VISIBLE
+            }
+
+            if (etCustomTip.visibility == View.VISIBLE) {
+                etCustomTip.visibility = View.INVISIBLE
+            } else {
+                etCustomTip.visibility = View.VISIBLE
+            }
+
         }
     }
 
