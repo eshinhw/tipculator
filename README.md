@@ -14,7 +14,7 @@
   <img width="450" height="700" src="https://user-images.githubusercontent.com/41933169/167367650-999573c8-1123-4832-a4fc-07b3648b11d0.png">
 </p>
 
-- Added split functionalities
+- Added split functionalities and custom tip feature
 - Improved UI design
 
 ## Privacy Policy
