@@ -8,7 +8,7 @@
 
 - Followed the assignment tutorials from CS194A
 
-## Version 1.1
+## Version 2.0
 
 <p align="center">
   <img width="450" height="700" src="https://user-images.githubusercontent.com/41933169/167367650-999573c8-1123-4832-a4fc-07b3648b11d0.png">
