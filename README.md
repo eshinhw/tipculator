@@ -9,8 +9,11 @@
 ## Version 1.1
 
 <p align="center">
-  <img width="450" height="700" src="https://user-images.githubusercontent.com/41933169/167366663-b1639178-36c7-48a0-81ab-e020affcd1f1.png">
+  <img width="450" height="700" src="https://user-images.githubusercontent.com/41933169/167367650-999573c8-1123-4832-a4fc-07b3648b11d0.png">
 </p>
+
+![Screenshot_20220509_005618]()
+
 
 **Privacy Policy**
 
