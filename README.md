@@ -6,13 +6,18 @@
   <img width="450" height="700" src="https://user-images.githubusercontent.com/41933169/153799850-17985970-88ed-41bd-8a63-fab2ec703a79.png">
 </p>
 
+- Followed the assignment tutorials from CS194A
+
 ## Version 1.1
 
 <p align="center">
   <img width="450" height="700" src="https://user-images.githubusercontent.com/41933169/167367650-999573c8-1123-4832-a4fc-07b3648b11d0.png">
 </p>
 
-**Privacy Policy**
+- Added split functionalities
+- Improved UI design
+
+## Privacy Policy
 
 Eddie Shin built the Tip Calculator app as a Free app. This SERVICE is provided by Eddie Shin at no cost and is intended for use as is.
 
