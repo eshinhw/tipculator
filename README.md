@@ -1,7 +1,15 @@
 # Tipculator
 
+## Initial Release (1.0)
+
 <p align="center">
-  <img width="450" height="900" src="https://user-images.githubusercontent.com/41933169/153799850-17985970-88ed-41bd-8a63-fab2ec703a79.png">
+  <img width="450" height="700" src="https://user-images.githubusercontent.com/41933169/153799850-17985970-88ed-41bd-8a63-fab2ec703a79.png">
+</p>
+
+## Version 1.1
+
+<p align="center">
+  <img width="450" height="700" src="https://user-images.githubusercontent.com/41933169/167366663-b1639178-36c7-48a0-81ab-e020affcd1f1.png">
 </p>
 
 **Privacy Policy**
