@@ -7,6 +7,7 @@ import android.text.TextWatcher
 import android.util.Log
 import android.view.View
 import android.widget.SeekBar
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 private const val TAG = "MainActivity"
@@ -41,6 +42,21 @@ class MainActivity : AppCompatActivity() {
 
             override fun afterTextChanged(s: Editable?) {
                 Log.i(TAG, "afterTextChanged $s")
+                computeTipAndTotal()
+            }
+
+        })
+
+        etCustomTip.addTextChangedListener(object: TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+                Log.i(TAG, "afterTextChanged $s")
+                updateCustomTip()
                 computeTipAndTotal()
             }
 
@@ -108,9 +124,7 @@ class MainActivity : AppCompatActivity() {
         }
         // 1. Get the value of the base and tip percent
         val base = etBillAmount.text.toString().toDouble()
-        val tipPercent = sbTipPercentage.progress
-        println(base)
-        println(tipPercent)
+        val tipPercent = tvTipPercentage.text.toString().dropLast(1).toInt()
 
         val tipAmt = base * tipPercent / 100
         val totalAmt = base + tipAmt
@@ -118,8 +132,8 @@ class MainActivity : AppCompatActivity() {
         val splitNum = etSplitNum.text.toString().toInt()
 
         if (splitNum > 1) {
-            val splitTipAmt = (base * tipPercent / 100) / splitNum
-            val splitTotalAmt = (base + splitTipAmt) / splitNum
+            val splitTipAmt = tipAmt / splitNum
+            val splitTotalAmt = totalAmt / splitNum
 
             tvTipAmount.text = "$ " + "%.2f".format(tipAmt)
             tvTotalAmount.text = "$ " + "%.2f".format(totalAmt)
@@ -127,13 +141,33 @@ class MainActivity : AppCompatActivity() {
             tvSplitTip.text = "$ " + "%.2f".format(splitTipAmt)
             tvSplitTotal.text = "$ " + "%.2f".format(splitTotalAmt)
         } else {
+
             tvTipAmount.text = "$ " + "%.2f".format(tipAmt)
             tvTotalAmount.text = "$ " + "%.2f".format(totalAmt)
+
+            tvSplitTip.text = "$ " + "%.2f".format(tipAmt)
+            tvSplitTotal.text = "$ " + "%.2f".format(totalAmt)
         }
+    }
 
-        // 3. Update the UI
+    private fun updateCustomTip() {
 
-
+        if (etCustomTip.text.isEmpty()) {
+            tvTipPercentage.text = ""
+            sbTipPercentage.progress = 0
+        } else {
+            val customTipPct = etCustomTip.text.toString().toInt()
+            Log.i(TAG, "$customTipPct")
+            if (customTipPct <= 30) {
+                Log.i(TAG, "second")
+                tvTipPercentage.text = "$customTipPct%"
+                sbTipPercentage.progress = customTipPct
+            } else {
+                Log.i(TAG, "last")
+                sbTipPercentage.progress = 30
+                tvTipPercentage.text = "$customTipPct%"
+            }
+        }
     }
 
 //    private fun updateTipDescription(tipPercent: Int) {

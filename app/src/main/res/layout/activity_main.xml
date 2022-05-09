@@ -109,7 +109,7 @@
             android:ems="8"
             android:inputType="number"
             android:text="1"
-            android:hint="# People"
+            android:hint="# Persons"
             android:textSize="30sp"
             android:textAlignment="center"/>
 
@@ -251,6 +251,7 @@
             android:layout_weight="1"
             android:textAlignment="center"
             android:ems="8"
+            android:inputType="number"
             android:visibility="invisible"/>
 
 
