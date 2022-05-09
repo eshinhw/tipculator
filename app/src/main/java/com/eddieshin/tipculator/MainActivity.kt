@@ -6,6 +6,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import android.view.View
+import android.view.Window
 import android.widget.SeekBar
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
@@ -16,7 +17,10 @@ private const val INITIAL_TIP_PERCENT = 15
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
+        //requestWindowFeature(Window.FEATURE_NO_TITLE)
+        supportActionBar?.hide()
         setContentView(R.layout.activity_main)
 
         etBillAmount.addTextChangedListener(object: TextWatcher {
@@ -115,13 +119,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun computeTipAndTotal() {
-        if (etBillAmount.text.isEmpty() || etSplitNum.text.isEmpty()) {
+        if (etBillAmount.text.isEmpty()) {
+            tvSplitBill.text = ""
             tvTipAmount.text = ""
             tvTotalAmount.text = ""
             tvSplitTip.text = ""
             tvSplitTotal.text = ""
             return
         }
+
         // 1. Get the value of the base and tip percent
         val base = etBillAmount.text.toString().toDouble()
         val tipPercent = tvTipPercentage.text.toString().dropLast(1).toInt()
@@ -129,24 +135,33 @@ class MainActivity : AppCompatActivity() {
         val tipAmt = base * tipPercent / 100
         val totalAmt = base + tipAmt
 
-        val splitNum = etSplitNum.text.toString().toInt()
-
-        if (splitNum > 1) {
-            val splitTipAmt = tipAmt / splitNum
-            val splitTotalAmt = totalAmt / splitNum
-
+        if (etSplitNum.text.isEmpty()) {
             tvTipAmount.text = "$ " + "%.2f".format(tipAmt)
             tvTotalAmount.text = "$ " + "%.2f".format(totalAmt)
-
-            tvSplitTip.text = "$ " + "%.2f".format(splitTipAmt)
-            tvSplitTotal.text = "$ " + "%.2f".format(splitTotalAmt)
+            tvSplitBill.text = ""
+            tvSplitTip.text = ""
+            tvSplitTotal.text = ""
         } else {
+            val splitNum = etSplitNum.text.toString().toInt()
 
-            tvTipAmount.text = "$ " + "%.2f".format(tipAmt)
-            tvTotalAmount.text = "$ " + "%.2f".format(totalAmt)
+            if (splitNum > 1) {
+                val splitBill = base / splitNum
+                val splitTipAmt = tipAmt / splitNum
+                val splitTotalAmt = totalAmt / splitNum
 
-            tvSplitTip.text = "$ " + "%.2f".format(tipAmt)
-            tvSplitTotal.text = "$ " + "%.2f".format(totalAmt)
+                tvTipAmount.text = "$ " + "%.2f".format(tipAmt)
+                tvTotalAmount.text = "$ " + "%.2f".format(totalAmt)
+                tvSplitBill.text = "$ " + "%.2f".format(splitBill)
+                tvSplitTip.text = "$ " + "%.2f".format(splitTipAmt)
+                tvSplitTotal.text = "$ " + "%.2f".format(splitTotalAmt)
+            } else {
+
+                tvTipAmount.text = "$ " + "%.2f".format(tipAmt)
+                tvTotalAmount.text = "$ " + "%.2f".format(totalAmt)
+                tvSplitBill.text = "$ " + "%.2f".format(base)
+                tvSplitTip.text = "$ " + "%.2f".format(tipAmt)
+                tvSplitTotal.text = "$ " + "%.2f".format(totalAmt)
+            }
         }
     }
 

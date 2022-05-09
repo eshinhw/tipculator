@@ -13,4 +13,6 @@
     <color name="worst">#E02900</color>
     <color name="best">#3CC870</color>
     <color name="light_brown">#C39B77</color>
+    <color name="mint">#CFF0CC</color>
+    <color name="grey">#808080</color>
 </resources>
