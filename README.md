@@ -11,7 +11,7 @@
 ## Version 2.0
 
 <p align="center">
-  <img width="400" height="600" src="https://user-images.githubusercontent.com/41933169/167718652-fd0a902e-8e8a-408d-9619-7a7fe4a363a1.png">
+  <img width="1000" height="600" src="https://user-images.githubusercontent.com/41933169/167718652-fd0a902e-8e8a-408d-9619-7a7fe4a363a1.png">
 </p>
 
 - Added split functionalities and custom tip feature
