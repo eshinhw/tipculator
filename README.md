@@ -3,7 +3,7 @@
 ## Version 1.0 - Initial Release
 
 <p align="center">
-  <img width="450" height="700" src="https://user-images.githubusercontent.com/41933169/153799850-17985970-88ed-41bd-8a63-fab2ec703a79.png">
+  <img width="400" height="600" src="https://user-images.githubusercontent.com/41933169/153799850-17985970-88ed-41bd-8a63-fab2ec703a79.png">
 </p>
 
 - Followed the assignment tutorials from CS194A
@@ -11,7 +11,7 @@
 ## Version 2.0
 
 <p align="center">
-  <img width="450" height="700" src="https://user-images.githubusercontent.com/41933169/167367650-999573c8-1123-4832-a4fc-07b3648b11d0.png">
+  <img width="400" height="600" src="https://user-images.githubusercontent.com/41933169/167718652-fd0a902e-8e8a-408d-9619-7a7fe4a363a1.png">
 </p>
 
 - Added split functionalities and custom tip feature
