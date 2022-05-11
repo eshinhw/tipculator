@@ -1,6 +1,11 @@
 # Tipculator
 
-## Version 1.0 - Initial Release
+## Version 1.0 - Initial Release on Google Play Store
+
+April 9, 2022
+
+- Implemented basic functionalities of tip calculator follwing the guide materials from Stanford CS194A
+- Used Android View components such as TextView, EditText, Button and SideBar to design the UI
 
 <p align="center">
   <img width="800" height="600" src="https://user-images.githubusercontent.com/41933169/167771939-4c982729-b4ac-4721-bb46-afe5e2ffc349.png">
