@@ -34,6 +34,7 @@
             android:hint="Enter Bill"
             android:inputType="numberDecimal"
             android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
             android:textSize="30sp" />
 
     </LinearLayout>
@@ -93,25 +94,36 @@
         android:paddingBottom="30dp">
 
         <TextView
-            android:id="@+id/tvSplitNum"
+            android:id="@+id/tvSplitNumLabel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Split Persons"
+            android:text="Split"
             android:textAlignment="center"
             android:textSize="30sp"
-            android:layout_weight="1"/>
+            android:layout_weight="0.5" />
 
-        <EditText
-            android:id="@+id/etSplitNum"
+        <ImageView
+            android:src="@drawable/ic_minus"
+            android:id="@+id/ivMinus"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="8"
-            android:inputType="number"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:id="@+id/tvSplitNum"
+            android:layout_width="0dp"
             android:text="1"
-            android:hint="# Persons"
             android:textSize="30sp"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"/>
+
+        <ImageView
+            android:src="@drawable/ic_plus"
+            android:id="@+id/ivPlus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
 
     </LinearLayout>
 
@@ -225,7 +237,8 @@
             android:layout_height="wrap_content"
             android:text="10%"
             android:layout_weight="1"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
         <Button
             android:id="@+id/btnFifteenPct"
             android:layout_width="0dp"
@@ -233,6 +246,7 @@
             android:text="15%"
             android:layout_weight="1"
             android:textStyle="bold"
+            android:textColor="@color/white"
             />
         <Button
             android:id="@+id/btnTwentyPct"
@@ -241,6 +255,7 @@
             android:text="20%"
             android:layout_weight="1"
             android:textStyle="bold"
+            android:textColor="@color/white"
             />
         <Button
             android:id="@+id/btnCustomTip"
@@ -249,6 +264,7 @@
             android:text="Custom"
             android:layout_weight="1.6"
             android:textStyle="bold"
+            android:textColor="@color/white"
             />
 
     </LinearLayout>
@@ -280,6 +296,7 @@
             android:textAlignment="center"
             android:ems="8"
             android:inputType="number"
+            android:textColor="@color/colorPrimary"
             android:visibility="invisible"/>
 
 
