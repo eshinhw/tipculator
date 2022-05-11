@@ -9,9 +9,18 @@
 
 ## Version 2.0
 
+
+### Basic Split Functionality with EditText, Custom Tip and UI Improvement
+
 <p align="center">
   <img width="1000" height="600" src="https://user-images.githubusercontent.com/41933169/167718652-fd0a902e-8e8a-408d-9619-7a7fe4a363a1.png">
 </p>
+
+## Version 2.1
+
+### Split with Minus and Plus
+
+### Dark Theme
 
 ## Privacy Policy
 
