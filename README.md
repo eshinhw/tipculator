@@ -1,5 +1,7 @@
 # Tipculator
 
+Extension of Stanford CS194A Android Development - Assignment 1
+
 ## Table of Contents
 
 - [Privacy Policy](#privacy-policy)
