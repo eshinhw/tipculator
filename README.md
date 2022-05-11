@@ -8,7 +8,8 @@
 - [Version 2.0](#ver2.0)
 - [Version 2.1](#ver2.1)
 
-## Version 1.0 - Initial Release on Google Play Store (Unpublished)<a name="ver1.0"></a>
+<a name="ver1.0"></a>
+## Version 1.0 - Initial Release on Google Play Store (Unpublished)
 
 April 9, 2022
 
