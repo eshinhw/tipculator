@@ -37,20 +37,6 @@ class MainActivity : AppCompatActivity() {
 
         })
 
-        etSplitNum.addTextChangedListener(object: TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-            }
-
-            override fun afterTextChanged(s: Editable?) {
-                Log.i(TAG, "afterTextChanged $s")
-                computeTipAndTotal()
-            }
-
-        })
-
         etCustomTip.addTextChangedListener(object: TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
             }
@@ -85,6 +71,21 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
+
+        ivMinus.setOnClickListener {
+            val splitNum = tvSplitNum.text.toString().toInt()
+
+            if (splitNum > 1) {
+                tvSplitNum.text = "${splitNum-1}"
+            }
+            computeTipAndTotal()
+        }
+
+        ivPlus.setOnClickListener {
+            val splitNum = tvSplitNum.text.toString().toInt()
+            tvSplitNum.text = "${splitNum+1}"
+            computeTipAndTotal()
+        }
 
         btnTenPct.setOnClickListener{
             sbTipPercentage.progress = 10
@@ -135,14 +136,14 @@ class MainActivity : AppCompatActivity() {
         val tipAmt = base * tipPercent / 100
         val totalAmt = base + tipAmt
 
-        if (etSplitNum.text.isEmpty()) {
+        if (tvSplitNum.text.isEmpty()) {
             tvTipAmount.text = "$ " + "%.2f".format(tipAmt)
             tvTotalAmount.text = "$ " + "%.2f".format(totalAmt)
             tvSplitBill.text = ""
             tvSplitTip.text = ""
             tvSplitTotal.text = ""
         } else {
-            val splitNum = etSplitNum.text.toString().toInt()
+            val splitNum = tvSplitNum.text.toString().toInt()
 
             if (splitNum > 1) {
                 val splitBill = base / splitNum
