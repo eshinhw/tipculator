@@ -4,8 +4,8 @@
 
 April 9, 2022
 
-- Implemented basic functionalities of tip calculator follwing the guide materials from Stanford CS194A
-- Used Android View components such as TextView, EditText, Button and SideBar to design the UI
+- Implemented basic functionalities of tip calculator follwing the guide materials from Stanford CS194A.
+- Used Android View components such as TextView, EditText, Button and SideBar to design the UI.
 
 <p align="center">
   <img width="800" height="600" src="https://user-images.githubusercontent.com/41933169/167771939-4c982729-b4ac-4721-bb46-afe5e2ffc349.png">
@@ -14,8 +14,11 @@ April 9, 2022
 
 ## Version 2.0
 
+May 10, 2022
 
-### Basic Split Functionality with EditText, Custom Tip and UI Improvement
+- Implemented split functionality with EditText.
+- Introduced custom tip where an user provides a specific tip percentage ranged from 0 to 100.
+- Improved UI/visualizations.
 
 <p align="center">
   <img width="1000" height="600" src="https://user-images.githubusercontent.com/41933169/167718652-fd0a902e-8e8a-408d-9619-7a7fe4a363a1.png">
