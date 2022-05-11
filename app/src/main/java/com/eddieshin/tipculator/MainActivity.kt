@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
         delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_YES
         setContentView(R.layout.activity_main)
 
+        sbTipPercentage.progress = INITIAL_TIP_PERCENT
+        tvTipPercentage.text = "$INITIAL_TIP_PERCENT%"
+
         etBillAmount.addTextChangedListener(object: TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
             }
@@ -54,16 +57,13 @@ class MainActivity : AppCompatActivity() {
 
         })
 
-        sbTipPercentage.progress = INITIAL_TIP_PERCENT
-        tvTipPercentage.text = "$INITIAL_TIP_PERCENT%"
-//        updateTipDescription(INITIAL_TIP_PERCENT)
+
 
         sbTipPercentage.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 Log.i(TAG, "onProgressChanged $progress")
                 tvTipPercentage.text = "$progress%"
                 computeTipAndTotal()
-//                updateTipDescription(progress)
             }
 
             override fun onStartTrackingTouch(p0: SeekBar?) {
@@ -188,24 +188,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-//    private fun updateTipDescription(tipPercent: Int) {
-//        val tipWord = when (tipPercent) {
-//            in 0..5 -> "Horrible"
-//            in 6..10 -> "Poor"
-//            in 11..15 -> "Acceptable"
-//            in 16..20 -> "Great"
-//            in 21..25 -> "Excellent"
-//            else -> "Fantastic"
-//        }
-//
-//        tipDescription.text = tipWord
-//
-//        val color = ArgbEvaluator().evaluate(
-//            tipPercent.toFloat() / seekBarSlide.max,
-//            ContextCompat.getColor(this, R.color.worst),
-//            ContextCompat.getColor(this, R.color.best)
-//        ) as Int
-//
-//        tipDescription.setTextColor(color)
-//    }
 }
