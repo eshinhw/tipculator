@@ -3,7 +3,7 @@
 ## Version 1.0 - Initial Release
 
 <p align="center">
-  <img width="1000" height="600" src="https://user-images.githubusercontent.com/41933169/167771939-4c982729-b4ac-4721-bb46-afe5e2ffc349.png">
+  <img width="800" height="600" src="https://user-images.githubusercontent.com/41933169/167771939-4c982729-b4ac-4721-bb46-afe5e2ffc349.png">
 </p>
 
 
