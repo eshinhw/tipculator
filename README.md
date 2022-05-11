@@ -1,10 +1,19 @@
 # Tipculator
 
+## Version 1.0 - Initial Release
+
 <p align="center">
-  <img width="450" height="900" src="https://user-images.githubusercontent.com/41933169/153799850-17985970-88ed-41bd-8a63-fab2ec703a79.png">
+  <img width="800" height="600" src="https://user-images.githubusercontent.com/41933169/167771939-4c982729-b4ac-4721-bb46-afe5e2ffc349.png">
 </p>
 
-**Privacy Policy**
+
+## Version 2.0
+
+<p align="center">
+  <img width="1000" height="600" src="https://user-images.githubusercontent.com/41933169/167718652-fd0a902e-8e8a-408d-9619-7a7fe4a363a1.png">
+</p>
+
+## Privacy Policy
 
 Eddie Shin built the Tip Calculator app as a Free app. This SERVICE is provided by Eddie Shin at no cost and is intended for use as is.
 
