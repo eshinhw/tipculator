@@ -1,6 +1,6 @@
 # Tipculator
 
-## Version 1.0 - Initial Release on Google Play Store
+## Version 1.0 - Initial Release on Google Play Store (Unpublished)
 
 April 9, 2022
 
