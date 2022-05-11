@@ -34,7 +34,7 @@
             android:hint="Enter Bill"
             android:inputType="numberDecimal"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimary"
+            android:textColor="?attr/colorPrimary"
             android:textSize="30sp" />
 
     </LinearLayout>
@@ -108,7 +108,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.15"
-            app:tint="@color/colorOnPrimary" />
+            app:tint="?attr/colorPrimary"
+            />
 
         <TextView
             android:id="@+id/tvSplitNum"
@@ -118,7 +119,7 @@
             android:textAlignment="center"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
-            android:textColor="@color/colorPrimary"/>
+            android:textColor="?attr/colorPrimary"/>
 
         <ImageView
             android:src="@drawable/ic_plus"
@@ -126,7 +127,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.15"
-            app:tint="@color/colorOnPrimary" />
+            app:tint="?attr/colorPrimary" />
 
     </LinearLayout>
 
@@ -250,6 +251,7 @@
             android:layout_weight="1"
             android:textStyle="bold"
             android:textColor="@color/white"
+            android:backgroundTint="?attr/colorPrimary"
             />
         <Button
             android:id="@+id/btnTwentyPct"

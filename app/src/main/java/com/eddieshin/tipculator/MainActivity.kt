@@ -9,6 +9,7 @@ import android.view.View
 import android.view.Window
 import android.widget.SeekBar
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatDelegate
 import kotlinx.android.synthetic.main.activity_main.*
 
 private const val TAG = "MainActivity"
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //requestWindowFeature(Window.FEATURE_NO_TITLE)
         supportActionBar?.hide()
+        delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_YES
         setContentView(R.layout.activity_main)
 
         etBillAmount.addTextChangedListener(object: TextWatcher {
