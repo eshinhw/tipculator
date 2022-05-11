@@ -14,7 +14,7 @@ April 9, 2022
 
 ## Version 2.0
 
-May 10, 2022
+May 8, 2022
 
 - Implemented split functionality with EditText.
 - Introduced custom tip where an user provides a specific tip percentage ranged from 0 to 100.
@@ -25,6 +25,8 @@ May 10, 2022
 </p>
 
 ## Version 2.1
+
+May 11, 2022
 
 - Improved split functionalities with minus and plus icons
 - enabled theme for dark mode
