@@ -6,8 +6,8 @@ Extension of Stanford CS194A Android Development - Assignment 1
 
 - [Privacy Policy](#privacy-policy)
 - [Terms & Conditions](#terms-conditions)
-- [Version 1.0 - Final Version of Assignment 1 from CS194A](#ver1.0)
-- [Version 2.0](#ver2.0)
+- [Version 1.0 - Final Version of Assignment 1 from CS194A Stanford](#ver1.0)
+- [Version 2.0 - Extended Version of A1 CS194A Stanford](#ver2.0)
 - [Version 2.1](#ver2.1)
 
 <a name="ver1.0"></a>
