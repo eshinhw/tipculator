@@ -35,7 +35,8 @@
             android:hint="Enter Bill"
             android:inputType="numberDecimal"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="?attr/colorOnPrimary"/>
 
     </LinearLayout>
     <LinearLayout
@@ -61,7 +62,7 @@
             android:layout_weight="1"
             android:textAlignment="center"
             android:textSize="30sp"
-            android:textColor="?attr/colorPrimary"
+            android:textColor="?attr/colorOnPrimary"
             />
 
     </LinearLayout>
@@ -89,7 +90,7 @@
             android:layout_weight="1"
             android:textAlignment="center"
             android:textSize="30sp"
-            android:textColor="?attr/colorPrimary"
+            android:textColor="?attr/colorOnPrimary"
             />
 
     </LinearLayout>
@@ -163,7 +164,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="?attr/colorOnPrimary"/>
 
 
     </LinearLayout>
@@ -191,7 +193,7 @@
             android:layout_weight="1"
             android:textAlignment="center"
             android:textSize="30sp"
-            android:textColor="?attr/colorPrimary"
+            android:textColor="?attr/colorOnPrimary"
             />
 
 
@@ -220,7 +222,7 @@
             android:layout_weight="1"
             android:textAlignment="center"
             android:textSize="30sp"
-            android:textColor="?attr/colorPrimary"
+            android:textColor="?attr/colorOnPrimary"
             />
 
 
@@ -325,7 +327,7 @@
             android:textAlignment="center"
             android:ems="8"
             android:inputType="number"
-            android:textColor="@color/colorPrimary"
+            android:textColor="?attr/colorOnPrimary"
             android:visibility="invisible"/>
 
 

@@ -4,7 +4,7 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
-        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorOnPrimary">@color/grey</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/colorSecondary</item>
         <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
@@ -14,7 +14,5 @@
         <!-- Customize your theme here. -->
         <item name="android:colorBackground">@color/white</item>
         <item name="fontFamily">@font/itim</item>
-        <item name="android:textColor">@color/grey</item>
-<!--        <item name="android:textColorPrimary">@color/white</item>-->
     </style>
 </resources>

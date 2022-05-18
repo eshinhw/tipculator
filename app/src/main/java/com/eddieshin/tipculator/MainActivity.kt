@@ -20,9 +20,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        //requestWindowFeature(Window.FEATURE_NO_TITLE)
         supportActionBar?.hide()
-        delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_YES
+        // delegate.localNightMode = AppCompatDelegate.MODE_NIGHT_YES
         setContentView(R.layout.activity_main)
 
         sbTipPercentage.progress = INITIAL_TIP_PERCENT
