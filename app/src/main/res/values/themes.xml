@@ -14,6 +14,7 @@
         <!-- Customize your theme here. -->
         <item name="android:colorBackground">@color/white</item>
         <item name="fontFamily">@font/itim</item>
-
+        <item name="android:textColor">@color/grey</item>
+<!--        <item name="android:textColorPrimary">@color/white</item>-->
     </style>
 </resources>

@@ -23,7 +23,8 @@
             android:layout_weight="1"
             android:text="Bill Amount"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="?attr/colorPrimary"/>
 
         <EditText
             android:id="@+id/etBillAmount"
@@ -34,7 +35,6 @@
             android:hint="Enter Bill"
             android:inputType="numberDecimal"
             android:textAlignment="center"
-            android:textColor="?attr/colorPrimary"
             android:textSize="30sp" />
 
     </LinearLayout>
@@ -50,7 +50,9 @@
             android:layout_weight="1"
             android:text="Tip"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="?attr/colorPrimary"
+            />
 
         <TextView
             android:id="@+id/tvTipAmount"
@@ -58,7 +60,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="?attr/colorPrimary"
+            />
 
     </LinearLayout>
 
@@ -74,7 +78,9 @@
             android:layout_weight="1"
             android:text="Total"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="?attr/colorPrimary"
+            />
 
         <TextView
             android:id="@+id/tvTotalAmount"
@@ -82,7 +88,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="?attr/colorPrimary"
+            />
 
     </LinearLayout>
 
@@ -100,7 +108,9 @@
             android:text="Split"
             android:textAlignment="center"
             android:textSize="30sp"
-            android:layout_weight="0.5" />
+            android:layout_weight="0.5"
+            android:textColor="?attr/colorPrimary"
+            />
 
         <ImageView
             android:src="@drawable/ic_minus"
@@ -143,7 +153,9 @@
             android:layout_weight="1"
             android:text="Split Bill"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="?attr/colorPrimary"
+            />
 
         <TextView
             android:id="@+id/tvSplitBill"
@@ -168,7 +180,9 @@
             android:layout_weight="1"
             android:text="Split Tip"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="?attr/colorPrimary"
+            />
 
         <TextView
             android:id="@+id/tvSplitTip"
@@ -176,7 +190,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="?attr/colorPrimary"
+            />
 
 
     </LinearLayout>
@@ -193,7 +209,9 @@
             android:layout_weight="1"
             android:text="Split Total"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="?attr/colorPrimary"
+            />
 
         <TextView
             android:id="@+id/tvSplitTotal"
@@ -201,7 +219,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="?attr/colorPrimary"
+            />
 
 
     </LinearLayout>
@@ -220,7 +240,9 @@
             android:layout_weight="0.3"
             android:text="15%"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="?attr/colorPrimary"
+            />
 
         <SeekBar
             android:id="@+id/sbTipPercentage"
@@ -289,7 +311,9 @@
             android:textSize="30sp"
             android:layout_weight="1"
             android:textAlignment="center"
-            android:visibility="invisible"/>
+            android:visibility="invisible"
+            android:textColor="?attr/colorPrimary"
+            />
 
         <EditText
             android:id="@+id/etCustomTip"
