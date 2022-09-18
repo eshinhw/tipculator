@@ -3,8 +3,9 @@
 <p align="center">
   <img width="800" height="600" src="https://user-images.githubusercontent.com/41933169/167900273-50edac35-bf0f-452a-a120-6ca4d3fcfc96.png">
 </p>
-
-[Download the App - Available on Google Play Store](https://play.google.com/store/apps/details?id=com.eddieshin.tipculator)
+<p align="center">
+  <a href="https://play.google.com/store/apps/details?id=com.eddieshin.tipculator">Download the App - Available on Google Play Store</a>
+</p>
 
 ## Table of Contents
 
