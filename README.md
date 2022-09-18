@@ -1,6 +1,10 @@
 # Tipculator
 
-Extension of Stanford CS194A Android Development - Assignment 1
+<p align="center">
+  <img width="800" height="600" src="https://user-images.githubusercontent.com/41933169/167900273-50edac35-bf0f-452a-a120-6ca4d3fcfc96.png">
+</p>
+
+[Download the App - Available on Google Play Store](https://play.google.com/store/apps/details?id=com.eddieshin.tipculator)
 
 ## Table of Contents
 
@@ -20,10 +24,6 @@ April 9, 2022
 - Implemented basic functionalities of tip calculator follwing the guide materials from Stanford CS194A.
 - Used Android View components such as TextView, EditText, Button and SideBar to design the UI.
 
-<p align="center">
-  <img width="800" height="600" src="https://user-images.githubusercontent.com/41933169/167771939-4c982729-b4ac-4721-bb46-afe5e2ffc349.png">
-</p>
-
 <a name="ver2.0"></a>
 ## Version 2.0
 
@@ -33,10 +33,6 @@ May 8, 2022
 - Introduced custom tip where an user provides a specific tip percentage ranged from 0 to 100.
 - Improved UI with themes.
 
-<p align="center">
-  <img width="1000" height="600" src="https://user-images.githubusercontent.com/41933169/167718652-fd0a902e-8e8a-408d-9619-7a7fe4a363a1.png">
-</p>
-
 <a name="ver2.1"></a>
 ## Version 2.1
 
@@ -44,10 +40,6 @@ May 11, 2022
 
 - Improved split functionalities with minus and plus icons
 - enabled theme for dark mode
-
-<p align="center">
-  <img width="800" height="600" src="https://user-images.githubusercontent.com/41933169/167900273-50edac35-bf0f-452a-a120-6ca4d3fcfc96.png">
-</p>
 
 <a name="privacy-policy"></a>
 ## Privacy Policy
