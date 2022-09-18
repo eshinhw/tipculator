@@ -8,35 +8,26 @@
 
 ## Table of Contents
 
+- [Release Notes](#release-notes)
 - [Privacy Policy](#privacy-policy)
 - [Terms & Conditions](#terms-conditions)
-- [Version 1.0 - Final Version of Assignment 1 from CS194A Stanford](#ver1.0)
-- [Version 2.0 - Extended Version of A1 CS194A Stanford](#ver2.0)
-- [Version 2.1](#ver2.1)
-- [Version 2.2](#ver2.2)
 - [Credits](#credits)
 
-<a name="ver1.0"></a>
-## Version 1.0 - Initial Release on Google Play Store (Unpublished)
+<a name="release-notes"></a>
+## Release Notes
 
-April 9, 2022
+### Version 1.0 - April 9, 2022
 
 - Implemented basic functionalities of tip calculator follwing the guide materials from Stanford CS194A.
 - Used Android View components such as TextView, EditText, Button and SideBar to design the UI.
 
-<a name="ver2.0"></a>
-## Version 2.0
-
-May 8, 2022
+### Version 2.0 - May 8, 2022
 
 - Implemented split functionality with EditText.
 - Introduced custom tip where an user provides a specific tip percentage ranged from 0 to 100.
 - Improved UI with themes.
 
-<a name="ver2.1"></a>
-## Version 2.1
-
-May 11, 2022
+### Version 2.1 - May 11, 2022
 
 - Improved split functionalities with minus and plus icons
 - enabled theme for dark mode
