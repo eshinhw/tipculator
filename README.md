@@ -1,9 +1,16 @@
-# Tipculator
+<div align="center">
 
-<p align="center">
-  <img width="800" height="600" src="https://user-images.githubusercontent.com/41933169/167900273-50edac35-bf0f-452a-a120-6ca4d3fcfc96.png">
-</p>
+  ![coollogo_com-44991879](https://github.com/eshinhw/tipculator/assets/41933169/1b50a2c5-fc4d-479d-aaa0-0420af406715)
 
+</div>
+
+<div align="center">
+
+  ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/eshinhw/tipculator)
+  ![GitHub issues](https://img.shields.io/github/issues/eshinhw/tipculator)
+  ![GitHub pull requests](https://img.shields.io/github/issues-pr/eshinhw/tipculator)
+  
+</div>
 
 ## Objectives
 
@@ -16,6 +23,12 @@
 
 <p align="center">
   <a href="https://play.google.com/store/apps/details?id=com.eddieshin.tipculator"></a>
+</p>
+
+## Demo Screenshot
+
+<p align="center">
+  <img width="800" height="600" src="https://user-images.githubusercontent.com/41933169/167900273-50edac35-bf0f-452a-a120-6ca4d3fcfc96.png">
 </p>
 
 ## Release Notes
